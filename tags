@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Buff	src/FifoBuff.h	/^    unsigned char  *Buff;$/;"	m	struct:__anon1
+BuffLength	src/FifoBuff.h	/^    unsigned short BuffLength;$/;"	m	struct:__anon1
+CC	makefile	/^CC=gcc$/;"	m
+FIFOBUFF_H_	src/FifoBuff.h	9;"	d
+FifoAddArrayByte	src/FifoBuff.c	/^static long FifoAddArrayByte(struct FifoBuff_n *This,unsigned char *dat,unsigned short length)$/;"	f	file:
+FifoAddArrayByte	src/FifoBuff.h	/^    long (*FifoAddArrayByte)(struct FifoBuff_n *This,unsigned char *dat,unsigned short length); \/\/添加指定长度的数据到队列中如果队列空间不够返回已添加的个数$/;"	m	struct:FifoBuff_n
+FifoAddByte	src/FifoBuff.c	/^static long FifoAddByte(struct FifoBuff_n *This,unsigned char dat)$/;"	f	file:
+FifoBuff	simple_main.c	/^FifoBuff_t FifoBuff[1];$/;"	v
+FifoBuff_n	src/FifoBuff.h	/^typedef struct FifoBuff_n{$/;"	s
+FifoBuff_t	src/FifoBuff.h	/^}FifoBuff_t;$/;"	t	typeref:struct:FifoBuff_n
+FifoGetArrayByte	src/FifoBuff.c	/^static long FifoGetArrayByte(struct FifoBuff_n *This,unsigned short length,unsigned char *out)$/;"	f	file:
+FifoGetArrayByte	src/FifoBuff.h	/^    long (*FifoGetArrayByte)(struct FifoBuff_n *This,unsigned short length,unsigned char *out); \/\/获得指定长度的数据如果没有这么多返回全部直接指定为0xffff为读取所有$/;"	m	struct:FifoBuff_n
+FifoGetByte	src/FifoBuff.c	/^static long FifoGetByte(struct FifoBuff_n *This,unsigned char *dat)$/;"	f	file:
+FifoGetFreeSpace	src/FifoBuff.c	/^static long FifoGetFreeSpace(struct FifoBuff_n *This)$/;"	f	file:
+FifoGetFreeSpace	src/FifoBuff.h	/^    long (*FifoGetFreeSpace)(struct FifoBuff_n *This);                                          \/\/得到还有剩余空间$/;"	m	struct:FifoBuff_n
+FifoInit	src/FifoBuff.c	/^FifoBuff_t* FifoInit(FifoBuff_t *This,unsigned char *buff,unsigned short length)$/;"	f
+FifoList	src/FifoBuff.c	/^static long FifoList(struct FifoBuff_n *This,unsigned short length,unsigned char *out)$/;"	f	file:
+FifoList	src/FifoBuff.h	/^    long (*FifoList)(struct FifoBuff_n *This,unsigned short length,unsigned char *out);$/;"	m	struct:FifoBuff_n
+FifoRead	src/FifoBuff.h	/^    unsigned short FifoRead;$/;"	m	struct:__anon1
+FifoVar_t	src/FifoBuff.h	/^}FifoVar_t;$/;"	t	typeref:struct:__anon1
+FifoWrite	src/FifoBuff.h	/^    unsigned short FifoWrite;$/;"	m	struct:__anon1
+Var	src/FifoBuff.h	/^    FifoVar_t Var[1];$/;"	m	struct:FifoBuff_n
+inc	makefile	/^inc=.\/src$/;"	m
+libso	makefile	/^libso=$(target).a$/;"	m
+m_FifoBuff	simple_main.c	/^unsigned char m_FifoBuff[101];$/;"	v
+m_FifoOut	simple_main.c	/^unsigned char m_FifoOut[101];$/;"	v
+main	simple_main.c	/^int main(void) {$/;"	f
+obj	makefile	/^obj=$(patsubst %.c, %.o,$(src))$/;"	m
+obja	makefile	/^obja=$(patsubst %.c, %.o,$(srca))$/;"	m
+src	makefile	/^src=$(wildcard *.c .\/$(inc)\/*.c .\/*.c)$/;"	m
+srca	makefile	/^srca=$(wildcard *.c .\/$(inc)\/*.c)$/;"	m
+target	makefile	/^target=app$/;"	m
